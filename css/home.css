@@ -1,0 +1,197 @@
+* {
+    margin:0;
+    padding:0;
+}
+
+
+@font-face {
+   font-family: 'AshburyW01';
+   src: url('../fonts/AshburyW01-LightItalic.eot');
+   src: local('Ashbury W01 Light Italic'), local('AshburyW01-LightItalic'),
+       url('AshburyW01-LightItalic.eot?#iefix') format('embedded-opentype'),
+       url('AshburyW01-LightItalic.woff2') format('woff2'),
+       url('AshburyW01-LightItalic.woff') format('woff'),
+       url('AshburyW01-LightItalic.ttf') format('truetype'),
+       url('AshburyW01-LightItalic.svg#AshburyW01-LightItalic') format('svg');
+   font-weight: 300;
+   font-style: italic;
+   font-display: swap;
+}
+
+@font-face {
+   font-family: 'Allrounder Grotesk Test Light';
+   src: url('../fonts/AllrounderGrotesk-Light.eot');
+   src: local('Allrounder Grotesk Light'), local('AllrounderGrotesk-Light'),
+       url('AllrounderGrotesk-Light.eot?#iefix') format('embedded-opentype'),
+       url('AllrounderGrotesk-Light.woff2') format('woff2'),
+       url('AllrounderGrotesk-Light.woff') format('woff'),
+       url('AllrounderGrotesk-Light.ttf') format('truetype'),
+       url('AllrounderGrotesk-Light.svg#AllrounderGrotesk-Light') format('svg');
+   font-weight: 300;
+   font-style: normal;
+   font-display: swap;
+}
+
+
+@font-face {
+   font-family: 'RF Dewi';
+   src: url('../fonts/RFDewi-Light.eot');
+   src: local('RFDewi-Light'),
+       url('RFDewi-Light.eot?#iefix') format('embedded-opentype'),
+       url('RFDewi-Light.woff2') format('woff2'),
+       url('RFDewi-Light.woff') format('woff'),
+       url('RFDewi-Light.ttf') format('truetype'),
+       url('RFDewi-Light.svg#RFDewi-Light') format('svg');
+   font-weight: 300;
+   font-style: normal;
+   font-display: swap;
+}
+
+@font-face {
+   font-family: 'UntitledSans-Light';
+   src: url('../fonts/UntitledSans-Light.eot');
+   src: local('Untitled Sans Light'), local('UntitledSans-Light'),
+       url('UntitledSans-Light.eot?#iefix') format('embedded-opentype'),
+       url('UntitledSans-Light.woff2') format('woff2'),
+       url('UntitledSans-Light.woff') format('woff'),
+       url('UntitledSans-Light.ttf') format('truetype'),
+       url('UntitledSans-Light.svg#UntitledSans-Light') format('svg');
+   font-weight: 300;
+   font-style: normal;
+   font-display: swap;
+}
+
+
+body {
+   margin: 0;
+   background-color: transparent;
+   color: rgb(0, 0, 0)
+}
+
+h1,h2,h3,h4,h5,h6 {
+   margin: 0%;
+}
+p {
+   margin: 0,0,10px;
+}
+
+
+
+/* Container
+======================*/
+.containe {
+   width: 100%;
+   max-width: 1178px;
+   margin: 0 auto;
+}
+
+/* Header
+======================*/
+
+.header {
+   top: 0;
+   left: 0;
+   z-index: 1000;
+  
+}
+
+.header_inner {
+   display: flex; 
+   justify-content: space-between; 
+   align-items: center; 
+}
+
+.header_logo {
+   max-width: 200px; /* Adjust the width as needed */
+   margin: 20; /* Centering the logo horizontally */
+   font-size: 25px;
+   font-family: 'AshburyW01';
+   word-spacing: 5px;
+}
+
+
+ /* Language
+======================*/
+
+.container-free {
+   position: relative;
+   display: inline-block;
+ }
+ 
+ .change-lang {
+   padding: 8px 8px 8px 8px; /* Отступы */
+   font-size: 15px;
+   border-radius: 20px; /* Радиус закругления углов */
+   appearance: none; /* Скрытие стандартного стиля элемента */
+   -webkit-appearance: none;
+   -moz-appearance: none;
+   background-repeat: no-repeat;
+   transition: transform 0.3s; /* Анимация поворота */
+   font-family: 'RF Dewi';
+   text-align: center; /* Выравнивание текста по центру */
+   word-spacing: 5px;
+
+ }
+ 
+ .change-lang:focus {
+   outline: none; /* Убираем контур фокуса */
+   
+ }
+
+ .change-lang:hover {
+   color: #999; /* Изменение цвета текста при наведении */
+}
+ 
+ 
+
+ /* Nav
+======================*/
+.nav {
+   display: flex;
+   margin: 20; /* Centering the logo horizontally */
+   font-size: 20px;
+   padding-top: 10px;
+}
+
+.nav_link {
+   margin-left: 50px;
+   color: rgb(0, 0, 0);
+   text-decoration: none;
+   font-family: 'RF Dewi';
+   transition: opacity 0.3s linear; /* Установка плавного перехода для прозрачности */
+   padding-top: 5px;
+
+}
+
+.nav_link:first-child {
+   margin-left: 0%;
+
+}
+.nav_link:hover {
+   color: #888;
+}
+
+
+.toggle-nav {
+   background-color: #EBEBEA;
+   display: block;
+   position: absolute;
+   border: 0;
+   top: 10px;
+   right: 15px;
+   color: #888;
+   font-weight: 700;
+   font-size: 10px;
+   text-transform: uppercase;
+   width: 40px;
+   height: 40px;
+   outline: 0;
+   margin: 0;
+   padding: 0 9px;
+   text-align: center;
+   z-index: 999;
+   transition: all 0.6s ease;
+   border-radius: 50%;
+   cursor: pointer;
+}
+
