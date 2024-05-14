@@ -1,0 +1,98 @@
+@font-face {
+    font-family: 'Copyright Klim Type Foundry';
+    src: url('UntitledSans-Regular.eot');
+    src: local('Untitled Sans Regular'), local('UntitledSans-Regular'),
+        url('UntitledSans-Regular.eot?#iefix') format('embedded-opentype'),
+        url('UntitledSans-Regular.woff2') format('woff2'),
+        url('UntitledSans-Regular.woff') format('woff'),
+        url('UntitledSans-Regular.ttf') format('truetype'),
+        url('UntitledSans-Regular.svg#UntitledSans-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'AshburyW01';
+    src: url('AshburyW01-LightItalic.eot');
+    src: local('Ashbury W01 Light Italic'), local('AshburyW01-LightItalic'),
+        url('AshburyW01-LightItalic.eot?#iefix') format('embedded-opentype'),
+        url('AshburyW01-LightItalic.woff2') format('woff2'),
+        url('AshburyW01-LightItalic.woff') format('woff'),
+        url('AshburyW01-LightItalic.ttf') format('truetype'),
+        url('AshburyW01-LightItalic.svg#AshburyW01-LightItalic') format('svg');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Allrounder Grotesk Test';
+    src: url('AllrounderGrotesk-RegularItalic.eot');
+    src: local('Allrounder Grotesk Regular Italic'), local('AllrounderGrotesk-RegularItalic'),
+        url('AllrounderGrotesk-RegularItalic.eot?#iefix') format('embedded-opentype'),
+        url('AllrounderGrotesk-RegularItalic.woff2') format('woff2'),
+        url('AllrounderGrotesk-RegularItalic.woff') format('woff'),
+        url('AllrounderGrotesk-RegularItalic.ttf') format('truetype'),
+        url('AllrounderGrotesk-RegularItalic.svg#AllrounderGrotesk-RegularItalic') format('svg');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Allrounder Grotesk Test';
+    src: url('AllrounderGrotesk-Regular.eot');
+    src: local('Allrounder Grotesk Regular'), local('AllrounderGrotesk-Regular'),
+        url('AllrounderGrotesk-Regular.eot?#iefix') format('embedded-opentype'),
+        url('AllrounderGrotesk-Regular.woff2') format('woff2'),
+        url('AllrounderGrotesk-Regular.woff') format('woff'),
+        url('AllrounderGrotesk-Regular.ttf') format('truetype'),
+        url('AllrounderGrotesk-Regular.svg#AllrounderGrotesk-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Allrounder Grotesk Test Medium It';
+    src: url('AllrounderGrotesk-MediumItalic.eot');
+    src: local('Allrounder Grotesk Medium Italic'), local('AllrounderGrotesk-MediumItalic'),
+        url('AllrounderGrotesk-MediumItalic.eot?#iefix') format('embedded-opentype'),
+        url('AllrounderGrotesk-MediumItalic.woff2') format('woff2'),
+        url('AllrounderGrotesk-MediumItalic.woff') format('woff'),
+        url('AllrounderGrotesk-MediumItalic.ttf') format('truetype'),
+        url('AllrounderGrotesk-MediumItalic.svg#AllrounderGrotesk-MediumItalic') format('svg');
+    font-weight: 500;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Allrounder Grotesk Test';
+    src: url('AllrounderGrotesk-Medium.eot');
+    src: local('Allrounder Grotesk Medium'), local('AllrounderGrotesk-Medium'),
+        url('AllrounderGrotesk-Medium.eot?#iefix') format('embedded-opentype'),
+        url('AllrounderGrotesk-Medium.woff2') format('woff2'),
+        url('AllrounderGrotesk-Medium.woff') format('woff'),
+        url('AllrounderGrotesk-Medium.ttf') format('truetype'),
+        url('AllrounderGrotesk-Medium.svg#AllrounderGrotesk-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'AshburyW01';
+    src: url('AshburyW01-Medium.eot');
+    src: local('Ashbury W01 Medium'), local('AshburyW01-Medium'),
+        url('AshburyW01-Medium.eot?#iefix') format('embedded-opentype'),
+        url('AshburyW01-Medium.woff2') format('woff2'),
+        url('AshburyW01-Medium.woff') format('woff'),
+        url('AshburyW01-Medium.ttf') format('truetype'),
+        url('AshburyW01-Medium.svg#AshburyW01-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
