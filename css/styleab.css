@@ -336,25 +336,23 @@ input {
 
 .text {
   flex-grow: 2;
+  font-size: 19px; /* Пример использования em для относительного размера шрифта */
+  font-weight: 300;
   font-family: 'UntitledSans-Light';
   word-spacing: 0.2em; /* Пример использования em для относительного размера пробелов между словами */
+  padding-right: 10%; /* Пример использования процентов для относительного размера отступа справа */
   line-height: 1.5; /* Увеличиваем интерлиньяж на 1.5 */
   padding-top: 5%; /* Пример использования процентов для относительного размера отступа сверху */
   flex-direction: column; /* Arrange items in a column */
-
-  font-weight: 400;
-  font-style: normal;
-  font-size: 19px;
-  line-height: 150%;
 }
 
 
 .text p {
-  width: auto; /* Установите желаемую ширину, например, 80% от ширины родительского контейнера */
+  width: 450px; /* Установите желаемую ширину, например, 80% от ширины родительского контейнера */
   margin: 0 auto; /* Центрируем блок текста по горизонтали */
-  padding-left: 15px;
-}
+  margin-bottom: 15px; /* Устанавливаем отступ между абзацами */
 
+}
 
 br {
   display: block;
@@ -396,12 +394,9 @@ br {
   padding: 0 15px; /* добавляем отступы справа и слева для текста и фотографии */
 }
 
-.text p {
-  text-align: justify; /* выравниваем текст по ширине */
-}
 
 img {
-  max-width: 500px; /* чтобы фотография автоматически масштабировалась по ширине блока */
+ 
   height: auto;
 }
 
@@ -433,16 +428,15 @@ img {
  }
  
  .text {
-   order: 1; /* Перемещаем текст наверх */
-   padding-top: 60px; /* Добавляем отступ сверху у текста */
+  order: 1; /* Перемещаем текст наверх */
+  padding-top: 20px; /* Добавляем отступ сверху у текста */
 
 
 
- }
+}
 
- .text p {
-  width: auto;
-  padding-left: 15px;
+.text p {
+ width: auto;
 }
  
 
@@ -474,12 +468,41 @@ img {
       order: 1;
   }
 
+  .photo img {
+   max-width: 100%;
+   width: 100%;
+  }
+
   .about {
       order: 2;
-      padding-top: 20px; /* Добавьте немного отступа сверху, если нужно */
+      padding-top: 50px; /* Добавьте немного отступа сверху, если нужно */
       align-self: flex-start; /* Выравниваем блок "About" вверху */
   }
+
+  img {
+    max-width: auto;
+    
+  }
+
 }
+
+
+/* Для десктопных экранов (шире 768px) */
+@media screen and (min-width: 769px) {
+  .text p {
+    padding-left: 15px; /* Применяем padding-left только на десктопных экранах */
+    text-align: justify; /* Применяем text-align: justify только на десктопных экранах */
+  }
+
+  img {
+    max-width: 500px;
+  }
+
+  .text {
+    margin-right: 15px;
+  }
+}
+
 
 
 
@@ -517,9 +540,6 @@ img {
   font-family: 'UntitledSans-Light';
   word-spacing: 0.2em; /* Пример использования em для относительного размера пробелов между словами */
   line-height: 1.5; /* Увеличиваем интерлиньяж на 1.5 */
-  padding-left: 120px;
-
-
   font-weight: 300;
   font-style: normal;
   font-size: 19px;
@@ -559,7 +579,24 @@ h4 {
   .column-right:nth-child(even) {
     margin-right: 0; /* Убираем правый отступ у каждой второй колонки */
   }
+
+  .software_block {
+    padding-bottom: 20px;
+  }
+
 }
+
+/* Для десктопных экранов (шире 768px) */
+@media screen and (min-width: 769px) {
+  .intro_content {
+    padding-left: 120px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+}
+
 
 
 
