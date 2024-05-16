@@ -559,112 +559,111 @@ input {
 ======================*/
 
 footer{
-  position: relative;
-  width: 100%;
-  padding-top: 100px;
-  padding-bottom: 50px;
-  padding-left: 30px; /* Отступ слева */
-  padding-right: 15px; /* Отступ справа */
+   position: relative;
+   width: 100%;
+   padding-top: 100px;
+   padding-bottom: 50px;
+   padding-left: 15px; /* Отступ слева */
+   padding-right: 15px; /* Отступ справа */
 }
 
 
 .container footer {
- max-width: 1140px;
- margin: 0 auto;
- display: flex;
- justify-content: center;
- align-items: center;
- flex-wrap: wrap;
+  max-width: 1140px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 
 .row{
- display: flex;
- justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 
 .col{
- min-width: 170px;
- color:#000000;
- font-family: 'RF Dewi';
+  min-width: 170px;
+  color:#000000;
+  font-family: 'UntitledSans-Light';
 
 
- 
+  
 }
 
 .col h3{
- margin-bottom: 15px;
- margin-top: 50px;
- position: relative;
- font-family: 'AshburyW01';
- font-size: 34px;
- font-weight: 300;
+  margin-bottom: 15px;
+  margin-top: 50px;
+  position: relative;
+  font-family: 'AshburyW01';
+  font-size: 34px;
+  font-weight: 300;
 }
 
 
 
 .col .links a{
- display: block;
- text-decoration: none;
- color:#000000;
- margin-bottom: 5px;
- position: relative;
- font-family: 'RF Dewi';
- font-size: 19px;
- font-weight: 300;
- 
-}
-
-.col .links h4{
   display: block;
   text-decoration: none;
   color:#000000;
   margin-bottom: 5px;
   position: relative;
-  font-family: 'RF Dewi';
+  font-family: 'UntitledSans-Light';
   font-size: 19px;
   font-weight: 300;
+  
+}
+
+.col .links h4{
+   display: block;
+   text-decoration: none;
+   color:#000000;
+   margin-bottom: 5px;
+   position: relative;
+   font-family: 'UntitledSans-Light';
+   font-size: 19px;
+   font-weight: 300;
 }
 
 .col .links a::before{
- content:'';
- height: 16px;
- width:3px;
- position: absolute;
- top:5px;
- left:-10px;
- opacity: 0;
- font-family: 'AshburyW01';
+  content:'';
+  height: 16px;
+  width:3px;
+  position: absolute;
+  top:5px;
+  left:-10px;
+  opacity: 0;
+  font-family: 'AshburyW01';
 
 }
 
 @media (max-width: 768px) { /* Применять стили только для экранов шириной 768px и менее */
-  .row {
-    flex-direction: column; /* Расположение столбцов в колонку */
-  }
+   .row {
+     flex-direction: column; /* Расположение столбцов в колонку */
+   }
+ 
+   .col {
+     min-width: auto; /* Устанавливаем минимальную ширину обратно на авто */
+     width: 100%; /* Ширина столбцов 100% */
+     margin-bottom: 40px; /* Добавляем отступ между столбцами */
+     padding-left: 20px;
+     display: contents;
+   }
+ }
 
-  .col {
-    min-width: auto; /* Устанавливаем минимальную ширину обратно на авто */
-    width: 100%; /* Ширина столбцов 100% */
-    margin-bottom: 40px; /* Добавляем отступ между столбцами */
-    padding-left: 20px;
-    display: contents;
-  }
+
+ .col .links a {
+   user-select: all; /* Allow text selection */
 }
 
 
-.col .links a {
-  user-select: all; /* Allow text selection */
+
+
+ .col .links a:hover {
+   color: #888; /* Change the color to your desired color */
+   user-select: auto; /* Reset text selection when hovered */
 }
-
-
-
-
-.col .links a:hover {
-  color: #888; /* Change the color to your desired color */
-  user-select: auto; /* Reset text selection when hovered */
-}
-
 
 
   /* Animations
