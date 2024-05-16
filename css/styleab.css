@@ -726,7 +726,8 @@ footer{
 .header_inner,
 .intro_inner,
 .gallery,
-.footer {
+.footer
+.content {
    opacity: 0;
    transform: translateY(100px);
 }
