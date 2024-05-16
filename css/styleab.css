@@ -589,7 +589,7 @@ h4 {
 /* Для десктопных экранов (шире 768px) */
 @media screen and (min-width: 769px) {
   .intro_content {
-    padding-left: 140px;
+    padding-left: 150px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
