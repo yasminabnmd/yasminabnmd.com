@@ -404,6 +404,10 @@ input {
        font-family: 'UntitledSans-Light';
    }
 
+    .intro_inner {
+   margin-top: 150px;
+}
+
    .nav {
        display: none;
    }
