@@ -569,14 +569,16 @@ h4 {
 
 /* Для устройств шириной до 768px (формат телефона) */
 @media (max-width: 768px) {
-  .intro_inner {
-    flex-direction: column; /* Изменяем направление flex на вертикальное */
+  .intro_content {
+    flex-direction: row; /* Ставим направление flex на горизонтальное */
+    flex-wrap: wrap; /* Разрешаем перенос элементов на новую строку */
   }
 
   .column-left,
   .column-right {
-    width: 100%; /* Каждая колонка занимает всю доступную ширину */
-    margin-right: 0; /* Убираем правый отступ у колонок */
+    width: 50%; /* Каждая колонка занимает половину доступной ширины */
+    box-sizing: border-box; /* Учитываем отступы и границы в ширину элемента */
+    margin-bottom: 70px; /* Добавляем отступ снизу между колонками */
   }
 
   .column-left:nth-child(even),
@@ -587,19 +589,8 @@ h4 {
   .software_block {
     padding-bottom: 20px;
   }
-
 }
 
-/* Для десктопных экранов (шире 768px) */
-@media screen and (min-width: 769px) {
-  .intro_content {
-    padding-left: 150px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-}
 
 
 
@@ -612,7 +603,6 @@ h4 {
 footer{
   position: relative;
   width: 100%;
-  padding-top: 200px;
   padding-bottom: 40px;
   padding-left: 15px; /* Отступ слева */
   padding-right: 15px; /* Отступ справа */
@@ -699,6 +689,11 @@ footer{
     padding-left: 20px;
     display: contents;
   }
+
+  footer {
+    padding-top: 100px;
+  }
+ 
 }
 
 
@@ -706,13 +701,18 @@ footer{
   user-select: all; /* Allow text selection */
 }
 
-
-
-
 .col .links a:hover {
   color: #888; /* Change the color to your desired color */
   user-select: auto; /* Reset text selection when hovered */
 }
+
+
+/* Для десктопных экранов (шире 768px) */
+@media screen and (min-width: 769px) {
+  .footer {
+    padding-top: 200px;
+  }
+  }
 
 
 
@@ -767,3 +767,4 @@ footer{
   animation: fadeInUp 0.6s ease forwards;
   animation-delay: 0.2s;
 }
+
