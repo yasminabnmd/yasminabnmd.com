@@ -49,7 +49,33 @@ images.forEach(image => {
   });
 });
 
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const images = document.querySelectorAll('.image-container .inner h3');
 
+  function showTextOnScroll() {
+    images.forEach(image => {
+      const rect = image.getBoundingClientRect();
+      if (rect.top < window.innerHeight && rect.bottom > 0) {
+        image.style.opacity = '1';
+      } else {
+        image.style.opacity = '0';
+      }
+    });
+  }
+
+  function showTextOnTouch() {
+    images.forEach(image => {
+      image.style.opacity = '1';
+    });
+  }
+
+  window.addEventListener('scroll', showTextOnScroll);
+  window.addEventListener('touchmove', showTextOnTouch);
+
+  showTextOnScroll(); // Initial check when the page loads
+});
+</script>
 
 
 
