@@ -378,7 +378,11 @@ input {
    padding-bottom: 200px;
 }
 
-
+.different-font {
+   font-family: 'AshburyW01';
+   font-size: 30px;
+   
+}
 
 
 /* Добавляем стили для мобильной версии */
@@ -412,13 +416,15 @@ input {
     padding-top: 0px;
   
    }
-} 
 
-.different-font {
+    .different-font {
    font-family: 'AshburyW01';
    font-size: 27px;
    
 }
+} 
+
+
 
 
 
