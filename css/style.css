@@ -402,6 +402,7 @@ input {
        font-weight: 300;
        font-style: normal;
        font-family: 'UntitledSans-Light';
+       padding-top: 20px;
    }
 
     .intro_inner {
