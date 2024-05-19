@@ -1,0 +1,724 @@
+* {
+  margin:0;
+  padding:0;
+  box-sizing: border-box;
+
+}
+
+
+@font-face {
+  font-family: 'UntitledSans-Light';
+  src: url("../fonts/untitled_sans_light-webfont.woff") format("woff"),
+       url("../fonts/untitled_sans_light-webfont.woff2") format("woff2");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'AshburyW01';
+  src: url('../fonts/ashburyw01-lightitalic-webfont.woff2') format('woff2'),
+       url('../fonts/ashburyw01-lightitalic-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+
+}
+
+@font-face {
+  font-family: 'RF Dewi';
+  src: url('../fonts/rfdewi-light-webfont.woff2') format('woff2'),
+       url('../fonts/rfdewi-light-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+
+}
+
+
+body {
+ margin: 0;
+ background-color: transparent;
+ color: rgb(0, 0, 0)
+}
+
+h1,h2,h3,h4,h5,h6 {
+ margin: 0%;
+}
+p {
+ margin: 0,0,10px;
+}
+
+
+
+/* Container
+======================*/
+.container {
+ width: 100%;
+ margin: 0 auto;
+}
+
+/* Header
+======================*/
+
+.header {
+ top: 0;
+ left: 0;
+ z-index: 1000;
+
+}
+
+.header_inner {
+ display: flex; 
+ justify-content: space-between; 
+ align-items: center; 
+}
+
+.header_logo {
+ max-width: 200px; /* Adjust the width as needed */
+ margin: 20; /* Centering the logo horizontally */
+ font-size: 25px;
+ font-family: 'AshburyW01';
+ word-spacing: 5px;
+}
+
+
+
+/* Nav
+======================*/
+
+.nav-bar {
+
+ font-size: 15px;
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ list-style: none;
+ position: relative;
+ padding: 15px 20px;
+}
+
+.logo {
+ max-width: 200px; /* Adjust the width as needed */
+ font-size: 22px;
+ font-family: 'AshburyW01';
+ word-spacing: 5px;
+ list-style: none; /* Убираем точку раздела */
+}
+
+.logo a {
+ text-decoration: none; /* Убираем подчеркивание ссылки */
+ color: inherit; /* Наследуем цвет текста от родительского элемента */
+}
+
+.menu {
+ display: flex;
+ list-style: none; /* Убираем точки разделителей */
+}
+
+.menu li a {
+ display: inline-block;
+ text-decoration: none;
+ text-align: center;
+ transition: 0.15s ease-in-out;
+ position: relative;
+ text-transform: none; /* Убираем преобразование текста в заглавные буквы */
+ 
+ margin-left: 50px;
+ color: rgb(0, 0, 0);
+ text-decoration: none;
+  font-family: 'UntitledSans-Light';
+ transition: opacity 0.3s linear; /* Установка плавного перехода для прозрачности */
+ padding-top: 5px;
+}
+
+
+
+
+.header-nav .site-menu ul li a:after {
+ content: ',';
+ color: #000
+}
+
+.header-nav .site-menu ul li:last-child a:after {
+ display: none
+}
+
+.header-nav .site-menu ul li a:hover,.header-nav .site-menu ul .current-menu-item a,.header-nav .site-menu ul .current-page-parent a,.header-nav .site-menu ul li.menu-active a,.header-nav .site-menu ul .current-page-ancestor a {
+ background-color: transparent;
+ color: #999
+}
+
+.header-variable .container {
+ display: flex;
+ justify-content: space-between
+}
+
+.header-variable .variable {
+ padding: 20px 0
+}
+
+
+
+
+
+
+
+header {
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 60px;
+  padding: 0 15px;
+  position: fixed;
+  width: 100%;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.01);
+  z-index: 100;
+  border-bottom: 0; /* Изначально скрываем контур */
+  transition: border-bottom 0.3s ease; /* Добавляем анимацию перехода */
+}
+
+/* Добавляем стиль для показа контура после прокрутки на 420px */
+header.scrolled {
+  border-bottom: 1px solid #000000;
+}
+
+.logo {
+  display: flex;
+}
+
+nav {
+  display: flex;
+  
+}
+
+nav a {
+  display: inline-block;
+  text-decoration: none;
+  text-align: center;
+  transition: 0.15s ease-in-out;
+  position: relative;
+  text-transform: none; /* Убираем преобразование текста в заглавные буквы */
+  
+  margin-left: 20px;
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-family: 'UntitledSans-Light';
+  transition: opacity 0.3s linear; /* Установка плавного перехода для прозрачности */
+
+  margin-left: 50px;
+  font-size: 19px;
+
+  
+}
+nav a:hover {
+  color: #999
+}
+
+input {
+  display: none;
+}
+@media (max-width: 768px) {
+  nav {
+      position: absolute;
+      top: 60px;
+      background: white;
+      left: 0;
+      flex-direction: column;
+      width: 100%;
+      align-items: center;
+      height: 0;
+      font-size: 37px;
+      transition: 0.5s;
+      overflow: hidden;
+  }
+
+  nav a:nth-child(1) {
+      margin-top: 200px;
+  }
+
+  nav a {
+      text-transform: capitalize; /* Первая буква каждого слова в заглавной */
+      opacity: 0; /* Сначала устанавливаем нулевую прозрачность */
+      transition: opacity 0.9s ease-in-out; /* Добавляем переход для прозрачности */
+      font-family: 'UntitledSans-Light';
+      font-size: 30px;
+      margin-left: 0px;
+      margin-top: 15px;
+  }
+
+  input:checked + header nav a {
+      opacity: 1; /* Постепенно увеличиваем прозрачность при открытии */
+      transition-delay: 0.2s; /* Задержка в 1 секунду для появления текста */
+  }
+
+  input:checked + header .logo {
+      visibility: hidden;
+  }
+
+  /* Скрываем контур при открытом меню */
+  input:checked + header.scrolled:not(.menu-open) {
+      border-bottom: none;
+  }
+
+
+  label {
+      width: 25px;
+      height: 15px;
+      position: relative;
+  }
+  label div {
+      width: 100%;
+      height: 2px;
+      background: #000000;
+      position: absolute;
+      transform: translateY(-50%);
+      border-radius: 99px;
+      transition: 0.3s;
+      transform: scale(1);
+  }
+  label div:nth-child(1) {
+      top: 0;
+  }
+  label div:nth-child(2) {
+      top: 50%;
+  }
+  label div:nth-child(3) {
+      top: 100%;
+  }
+
+  input:checked + header nav {
+      height: 100vh;
+  }
+  input:checked + header label div:nth-child(1) {
+      transform: rotate(45deg);
+      top: 50%;
+  }
+  input:checked + header label div:nth-child(3) {
+      transform: rotate(-45deg);
+      top: 50%;
+  }
+  input:checked + header label div:nth-child(2) {
+      transform: scale(0);
+      opacity: 0;
+  }
+}
+
+
+
+#header {
+  position: fixed;
+  top: -100px; /* Здесь мы задаем изначальное положение за пределами видимой области */
+  left: 0;
+  width: 100%;
+  height: 60px;
+  background-color: #ffffff;
+  transition: top 0.2s; /* Добавляем плавную анимацию при изменении свойства top */
+}
+
+
+
+
+/* Intro
+======================*/
+
+/* Content */
+.content {
+  width: 100%;
+  display: flex;
+  justify-content: space-between; /* Adjusts spacing between text and photos */
+  align-items: flex-start; /* Align items at the top */
+  padding-top: 63px;
+  padding-bottom: 100px;
+  
+}
+
+.text {
+  flex-grow: 2;
+  font-family: 'UntitledSans-Light';
+  word-spacing: 0.2em; /* Пример использования em для относительного размера пробелов между словами */
+  line-height: 1.5; /* Увеличиваем интерлиньяж на 1.5 */
+  padding-top: 5%; /* Пример использования процентов для относительного размера отступа сверху */
+  flex-direction: column; /* Arrange items in a column */
+
+  font-weight: 400;
+  font-style: normal;
+  font-size: 19px;
+  line-height: 150%;
+}
+
+
+.text p {
+  width: auto; /* Установите желаемую ширину, например, 80% от ширины родительского контейнера */
+  margin: 0 auto; /* Центрируем блок текста по горизонтали */
+  padding-left: 15px;
+}
+
+
+br {
+  display: block;
+  content: "";
+  margin: 15px 0; /* Устанавливаем отступы для <br> */
+}
+
+
+
+.content {
+  display: flex;
+  padding-top: 150px;
+}
+
+.about {
+  flex: 1;
+  margin-right: 100px;
+  padding-left: 15px;
+  font-weight: 100;
+  font-family: 'AshburyW01';
+  font-style: normal;
+  font-size: 35px;
+  text-decoration: none;
+  word-spacing: 5px;
+  list-style: none;
+
+}
+
+.text {
+  flex: 2;
+}
+
+.photo {
+  flex: 1;
+}
+
+.text,
+.photo {
+  padding: 0 15px; /* добавляем отступы справа и слева для текста и фотографии */
+}
+
+.text p {
+  text-align: justify; /* выравниваем текст по ширине */
+}
+
+img {
+  max-width: 500px; /* чтобы фотография автоматически масштабировалась по ширине блока */
+  height: auto;
+}
+
+
+
+.photos-content {
+  display: flex;
+  flex-direction: column; /* Arrange photos in a column */
+  padding-top: 5%; /* Пример использования процентов для относительного размера отступа сверху */
+  padding-right: 15px;
+}
+
+.photos-content img {
+  max-width: 100%; /* Уменьшаем ширину изображений до максимально возможной ширины блока */
+  height: auto; /* Сохраняем пропорции изображения */
+  margin-bottom: 2%; /* Пример использования процентов для относительного размера отступа между фотографиями */
+}
+
+.photos-content video {
+   max-width: 100%; /* Уменьшаем ширину видео до максимально возможной ширины блока */
+   height: auto; /* Сохраняем пропорции видео */
+   margin-bottom: 2%; /* Пример использования процентов для относительного размера отступа между видео */
+}
+
+/* Для экранов с шириной до 768px (предположим, это мобильные устройства) */
+@media screen and (max-width: 768px) {
+ .content {
+   flex-direction: column; /* Размещаем элементы в столбик */
+ }
+ 
+ .text {
+   order: 1; /* Перемещаем текст наверх */
+   padding-top: 60px; /* Добавляем отступ сверху у текста */
+
+
+
+ }
+
+ .text p {
+  width: auto;
+  padding-left: 15px;
+}
+ 
+
+ .photos-content {
+   order: 2; /* Перемещаем фотографии под текст */
+   padding-top: 70px; /* Добавляем отступ сверху у фотографий */
+   align-items: center;
+   padding-left: 15px;
+ }
+
+ .photos-content img,
+ .photos-content video {
+  max-width: 100%;
+  width: 100%;
+ }
+}
+
+/* Для мобильных устройств */
+@media screen and (max-width: 768px) {
+  .content {
+      flex-direction: column;
+  }
+
+  .text {
+      order: 3;
+  }
+
+  .photo {
+      order: 1;
+  }
+
+  .about {
+      order: 2;
+      padding-top: 20px; /* Добавьте немного отступа сверху, если нужно */
+      align-self: flex-start; /* Выравниваем блок "About" вверху */
+  }
+}
+
+
+
+
+
+ /* Softwere
+ ======================*/
+
+ .intro_inner {
+  display: flex;
+  flex-wrap: wrap; /* Разрешаем перенос элементов на новую строку */
+  padding-left: 15px;
+}
+
+.software_block {
+  flex: 1;
+  font-weight: 100;
+  font-family: 'AshburyW01';
+  font-style: normal;
+  font-size: 35px;
+  text-decoration: none;
+  word-spacing: 5px;
+  list-style: none;
+}
+
+.column-left,
+.column-right {
+  width: 25%; /* Каждый столбец занимает половину ширины контейнера */
+  list-style: none; /* Убираем маркеры у списков в столбцах */
+}
+
+.intro_content {
+  display: flex;
+  flex-grow: 2;
+  font-family: 'UntitledSans-Light';
+  word-spacing: 0.2em; /* Пример использования em для относительного размера пробелов между словами */
+  line-height: 1.5; /* Увеличиваем интерлиньяж на 1.5 */
+  padding-left: 120px;
+
+
+  font-weight: 300;
+  font-style: normal;
+  font-size: 19px;
+  line-height: 150%;
+  padding-top: 10px;
+
+}
+
+h4 {
+  padding-bottom: 25px;
+}
+
+.intro_content ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.intro_title {
+  margin-top: 0;
+  font-weight: 300;
+}
+
+/* Для устройств шириной до 768px (формат телефона) */
+@media (max-width: 768px) {
+  .intro_inner {
+    flex-direction: column; /* Изменяем направление flex на вертикальное */
+  }
+
+  .column-left,
+  .column-right {
+    width: 100%; /* Каждая колонка занимает всю доступную ширину */
+    margin-right: 0; /* Убираем правый отступ у колонок */
+  }
+
+  .column-left:nth-child(even),
+  .column-right:nth-child(even) {
+    margin-right: 0; /* Убираем правый отступ у каждой второй колонки */
+  }
+}
+
+
+
+
+
+  /* Footer
+======================*/
+
+footer{
+  position: relative;
+  width: 100%;
+  padding-top: 200px;
+  padding-bottom: 40px;
+  padding-left: 15px; /* Отступ слева */
+  padding-right: 15px; /* Отступ справа */
+}
+
+
+.container footer {
+ max-width: 1140px;
+ margin: 0 auto;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ flex-wrap: wrap;
+}
+
+
+.row{
+ display: flex;
+ justify-content: space-between;
+}
+
+.col{
+ min-width: 170px;
+ color:#000000;
+ font-family: 'RF Dewi';
+
+
+ 
+}
+
+.col h3{
+ margin-bottom: 15px;
+ margin-top: 50px;
+ position: relative;
+ font-family: 'AshburyW01';
+ font-size: 34px;
+ font-weight: 300;
+}
+
+
+
+.col .links a{
+ display: block;
+ text-decoration: none;
+ color:#000000;
+ margin-bottom: 5px;
+ position: relative;
+ font-family: 'RF Dewi';
+ font-size: 19px;
+ font-weight: 300;
+ 
+}
+
+.col .links h9{
+  display: block;
+  text-decoration: none;
+  color:#000000;
+  margin-bottom: 5px;
+  position: relative;
+  font-family: 'RF Dewi';
+  font-size: 19px;
+  font-weight: 300;
+}
+
+.col .links a::before{
+ content:'';
+ height: 16px;
+ width:3px;
+ position: absolute;
+ top:5px;
+ left:-10px;
+ opacity: 0;
+ font-family: 'AshburyW01';
+
+}
+
+@media (max-width: 768px) { /* Применять стили только для экранов шириной 768px и менее */
+  .row {
+    flex-direction: column; /* Расположение столбцов в колонку */
+  }
+
+  .col {
+    min-width: auto; /* Устанавливаем минимальную ширину обратно на авто */
+    width: 100%; /* Ширина столбцов 100% */
+    margin-bottom: 40px; /* Добавляем отступ между столбцами */
+    padding-left: 20px;
+    display: contents;
+  }
+}
+
+
+.col .links a {
+  user-select: all; /* Allow text selection */
+}
+
+
+
+
+.col .links a:hover {
+  color: #888; /* Change the color to your desired color */
+  user-select: auto; /* Reset text selection when hovered */
+}
+
+
+
+
+
+
+
+ /* Animations
+======================*/
+
+
+/* Скрыть блоки до начала анимации */
+.header_inner,
+.intro_inner,
+.gallery,
+.footer {
+   opacity: 0;
+   transform: translateY(100px);
+}
+
+/* Анимация для появления блоков */
+@keyframes fadeInUp {
+   to {
+       opacity: 1;
+       transform: translateY(0);
+   }
+}
+
+/* Применение анимации с задержкой для каждого блока */
+.header_inner {
+   animation: fadeInUp 0.6s ease forwards;
+   animation-delay: 0.2s;
+}
+
+.intro_inner {
+   animation: fadeInUp 0.6s ease forwards;
+   animation-delay: 0.4s;
+}
+
+.gallery {
+   animation: fadeInUp 0.6s ease forwards;
+   animation-delay: 0.6s;
+}
+
+.footer {
+   animation: fadeInUp 0.6s ease forwards;
+   animation-delay: 0.8s;
+}
