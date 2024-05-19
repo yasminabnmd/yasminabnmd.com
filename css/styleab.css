@@ -461,11 +461,11 @@ img {
   }
 
   .text {
-      order: 3;
+      order: 2;
   }
 
   .photo {
-      order: 1;
+      order: 3;
   }
 
   .photo img {
@@ -474,7 +474,7 @@ img {
   }
 
   .about {
-      order: 2;
+      order: 1;
       padding-top: 50px; /* Добавьте немного отступа сверху, если нужно */
       align-self: flex-start; /* Выравниваем блок "About" вверху */
   }
