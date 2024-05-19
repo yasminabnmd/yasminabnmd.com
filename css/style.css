@@ -393,7 +393,7 @@ input {
        align-items: center;
    }
    .intro_title {
-       font-size: 25px; /* Уменьшаем размер шрифта */
+       font-size: 26px; /* Уменьшаем размер шрифта */
        padding: 0 30px; /* Добавляем отступы по бокам */
        display: inline-block;
        text-align: center;
