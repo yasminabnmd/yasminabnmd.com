@@ -49,29 +49,6 @@ images.forEach(image => {
   });
 });
 
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-  const images = document.querySelectorAll('.image');
-
-  images.forEach(image => {
-    image.addEventListener('touchstart', function() {
-      const inner = image.querySelector('.inner');
-      if (inner) {
-        inner.style.opacity = '1';
-      }
-    });
-
-    image.addEventListener('touchend', function() {
-      const inner = image.querySelector('.inner');
-      if (inner) {
-        inner.style.opacity = '0';
-      }
-    });
-  });
-});
-</script>
-
-
 
 
 
