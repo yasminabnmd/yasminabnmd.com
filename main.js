@@ -51,33 +51,25 @@ images.forEach(image => {
 
 <script>
 document.addEventListener('DOMContentLoaded', function() {
-  const images = document.querySelectorAll('.image-container .inner h3');
+  const images = document.querySelectorAll('.image');
 
-  function showTextOnScroll() {
-    images.forEach(image => {
-      const rect = image.getBoundingClientRect();
-      if (rect.top < window.innerHeight && rect.bottom > 0) {
-        image.style.opacity = '1';
-      } else {
-        image.style.opacity = '0';
+  images.forEach(image => {
+    image.addEventListener('touchstart', function() {
+      const inner = image.querySelector('.inner');
+      if (inner) {
+        inner.style.opacity = '1';
       }
     });
-  }
 
-  function showTextOnTouch() {
-    images.forEach(image => {
-      image.style.opacity = '1';
+    image.addEventListener('touchend', function() {
+      const inner = image.querySelector('.inner');
+      if (inner) {
+        inner.style.opacity = '0';
+      }
     });
-  }
-
-  window.addEventListener('scroll', showTextOnScroll);
-  window.addEventListener('touchmove', showTextOnTouch);
-
-  showTextOnScroll(); // Initial check when the page loads
+  });
 });
 </script>
-
-
 
 
 
