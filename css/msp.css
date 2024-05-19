@@ -224,7 +224,7 @@ input {
 @media (max-width: 768px) {
     nav {
         position: absolute;
-        top: 100px;
+        top: 60px;
         background: white;
         left: 0;
         flex-direction: column;
