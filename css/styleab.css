@@ -724,7 +724,8 @@ footer{
 .header_inner,
 .intro_inner,
 .gallery,
-.footer {
+.footer
+.content {
    opacity: 0;
    transform: translateY(100px);
 }
@@ -756,4 +757,9 @@ footer{
 .footer {
    animation: fadeInUp 0.6s ease forwards;
    animation-delay: 0.8s;
+}
+
+.content {
+  animation: fadeInUp 0.6s ease forwards;
+  animation-delay: 0.8s;
 }
