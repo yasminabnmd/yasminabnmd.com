@@ -707,6 +707,13 @@ footer{
 }
 
 
+/* Для десктопных экранов (шире 768px) */
+@media screen and (min-width: 769px) {
+  .footer container: {
+    padding top: 20px;
+}
+
+
 
 
 
