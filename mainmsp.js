@@ -34,27 +34,3 @@ window.addEventListener("scroll", function() {
     lastScrollTop = currentScroll <= 0 ? 0 : currentScroll; // Для Mobile Safari
 }, false);
 
-
-
-
-
-<script>
-    document.addEventListener('DOMContentLoaded', (event) => {
-        const videoElement = document.getElementById('myVideo');
-
-        videoElement.addEventListener('click', () => {
-            if (videoElement.requestFullscreen) {
-                videoElement.requestFullscreen();
-            } else if (videoElement.mozRequestFullScreen) { // Firefox
-                videoElement.mozRequestFullScreen();
-            } else if (videoElement.webkitRequestFullscreen) { // Chrome, Safari and Opera
-                videoElement.webkitRequestFullscreen();
-            } else if (videoElement.msRequestFullscreen) { // IE/Edge
-                videoElement.msRequestFullscreen();
-            }
-
-            videoElement.play(); // Начинаем воспроизведение видео
-        });
-    });
-</script>
-
