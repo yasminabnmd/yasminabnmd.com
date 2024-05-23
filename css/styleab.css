@@ -603,8 +603,8 @@ h4 {
 footer{
    position: relative;
    width: 100%;
-   padding-top: 100px;
-   padding-bottom: 50px;
+   padding-top: 250px;
+   padding-bottom: 20px;
    padding-left: 15px; /* Отступ слева */
    padding-right: 15px; /* Отступ справа */
 }
@@ -657,7 +657,7 @@ footer{
   
 }
 
-.col .links h4{
+.col .links h10{
    display: block;
    text-decoration: none;
    color:#000000;
