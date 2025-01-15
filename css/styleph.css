@@ -468,6 +468,7 @@ input {
 .image-fullcontainer {
     position: relative;
     width: 100%;
+    height: 100vh; /* 100% высоты экрана */
     margin-left: 15px; /* Отступ слева */
     margin-right: 15px; /* Отступ справа */
 }
