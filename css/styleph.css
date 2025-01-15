@@ -469,7 +469,6 @@ input {
     position: relative;
     width: 100%;
     height: 100vh; /* 100% высоты экрана */
-    overflow: hidden; /* Скрывает части изображения, выходящие за пределы контейнера */
     margin-left: 15px; /* Отступ слева */
     margin-right: 15px; /* Отступ справа */
 }
