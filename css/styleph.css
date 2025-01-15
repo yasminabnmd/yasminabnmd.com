@@ -467,10 +467,11 @@ input {
 
 .image-fullcontainer {
     position: relative;
-    width: calc(100% - 30px); /* Учитываем отступы слева и справа */
+    width: 100%;
     height: 100vh; /* 100% высоты экрана */
     margin: 0 auto; /* Центрирование контейнера */
     overflow: hidden; /* Скрывает лишнее изображение */
+    padding-bottom: 120pt;
 }
 
 .fullimage {
