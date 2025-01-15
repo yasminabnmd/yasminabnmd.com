@@ -467,7 +467,6 @@ input {
 
 .image-fullcontainer {
     position: relative;
-    display: flex;
     width: 100%;
     margin-left: 15px; /* Отступ слева */
     margin-right: 15px; /* Отступ справа */
@@ -478,15 +477,11 @@ input {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 15px; /* Отступ слева */
-    margin-right: 15px; /* Отступ справа */
 }
 
 .fullimage img {
     object-fit: cover; /* Изображение заполняет контейнер без искажения */
     object-position: center; /* Центрирует изображение */
-    margin-left: 15px; /* Отступ слева */
-    margin-right: 15px; /* Отступ справа */
 }
 
 .gallery {
