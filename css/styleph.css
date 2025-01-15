@@ -467,7 +467,8 @@ input {
 
 .image-fullcontainer {
     position: relative;
-    width: 85%;
+    display: flex;
+    width: 100%;
     margin-left: 15px; /* Отступ слева */
     margin-right: 15px; /* Отступ справа */
 }
