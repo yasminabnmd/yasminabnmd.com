@@ -498,6 +498,7 @@ input {
    .full-width-image {
         width: 100%; /* Полная ширина для мобильных устройств */
         margin: 10px 0; /* Уменьшенные отступы */
+        padding-top: 120px;
     }
 
     .full-width-image .image img {
