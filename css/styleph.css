@@ -492,7 +492,8 @@ input {
     .full-width-image .image img {
         width: 100%; /* Изображение полностью адаптируется */
         height: auto; /* Пропорции остаются */
-        padding-bottom: 60px;
+        padding-bottom: 110px;
+        padding-top: 60px
     }
   }
 
