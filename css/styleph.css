@@ -404,6 +404,7 @@ input {
 .full-width-image {
     width: 100%; /* Занимает всю ширину */
     margin: 15px 0; /* Отступы сверху и снизу */
+    font-family: 'RF Dewi';
 }
 
 .full-width-image .image img {
