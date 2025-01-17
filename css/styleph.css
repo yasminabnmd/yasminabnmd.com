@@ -494,6 +494,16 @@ input {
     justify-content: space-between;
     margin: 15px;
   }
+
+   .full-width-image {
+        width: 100%; /* Полная ширина для мобильных устройств */
+        margin: 10px 0; /* Уменьшенные отступы */
+    }
+
+    .full-width-image .image img {
+        width: 100%; /* Изображение полностью адаптируется */
+        height: auto; /* Пропорции остаются */
+    }
   
   .image-container {
     width: calc(33.333% - 8px); /* Уменьшаем ширину каждого контейнера и уменьшаем отступы */
