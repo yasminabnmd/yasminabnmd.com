@@ -401,7 +401,15 @@ input {
     /* Gallery
  ======================*/
 
+.full-width-image {
+    width: 100%; /* Занимает всю ширину */
+    margin: 15px 0; /* Отступы сверху и снизу */
+}
 
+.full-width-image .image img {
+    width: 100%; /* Изображение адаптируется под ширину контейнера */
+    height: auto; /* Сохраняет пропорции */
+}
 
 .column {
   flex: 1;
