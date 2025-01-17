@@ -451,7 +451,6 @@ input {
 
 /* Set initial opacity of the text to 0 */
 .image-container .inner {
-  padding-top: 10px;
   margin-bottom: 120px;
   color: black;
   font-size: 11px;
