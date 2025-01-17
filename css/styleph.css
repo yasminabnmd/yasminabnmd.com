@@ -484,16 +484,8 @@ input {
         columns: 1; /* Одна колонка на мобильных устройствах */
         margin-bottom: -100px;
     }
-  }
 
-  .gallery {
-    display: flex;
-    flex-wrap: wrap; /* Позволяет элементам переноситься на новую строку */
-    justify-content: space-between;
-    margin: 15px;
-  }
-
-   .full-width-image {
+       .full-width-image {
         width: 100%; /* Полная ширина для мобильных устройств */
         margin: 10px 0; /* Уменьшенные отступы */
         padding-top: 120px;
@@ -505,7 +497,15 @@ input {
         width: 100%; /* Изображение полностью адаптируется */
         height: auto; /* Пропорции остаются */
     }
-  
+  }
+
+  .gallery {
+    display: flex;
+    flex-wrap: wrap; /* Позволяет элементам переноситься на новую строку */
+    justify-content: space-between;
+    margin: 15px;
+  }
+
   .image-container {
     width: calc(33.333% - 8px); /* Уменьшаем ширину каждого контейнера и уменьшаем отступы */
   }
