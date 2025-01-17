@@ -324,12 +324,9 @@ input {
 ======================*/
 
 .intro {
-
  flex-direction: column;
  justify-content: center;
-
  padding-top: 100px;
-
  color: #6c7279;
 }
 
@@ -344,7 +341,6 @@ input {
 
 .intro_title {
  margin: 0%;
-
  font-size: 30px;
  color: rgb(0, 0, 0);
  text-align: center;
@@ -443,6 +439,7 @@ input {
   transition: opacity 0.3s ease; /* Add opacity transition */
   font-weight: 300;
   font-size: 13px;
+  padding-top: 10px;
 }
 
 /* Set opacity of h3 to 1 on hover */
