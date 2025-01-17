@@ -406,13 +406,11 @@ input {
     margin: 15px 0; /* Отступы сверху и снизу */
     font-family: 'RF Dewi';
     font-weight: 300;
-    font-size: 11px;
 }
 
 .full-width-image .image img {
     width: 100%; /* Изображение адаптируется под ширину контейнера */
     height: auto; /* Сохраняет пропорции */
-    font-size: 11px;
 }
 
 .column {
@@ -444,7 +442,7 @@ input {
   opacity: 0; /* Set initial opacity to 0 */
   transition: opacity 0.3s ease; /* Add opacity transition */
   font-weight: 300;
-  font-size: 11px;
+  font-size: 13px;
 }
 
 /* Set opacity of h3 to 1 on hover */
