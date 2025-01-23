@@ -470,7 +470,7 @@ input {
   display: flex;
   flex-wrap: wrap; /* Позволяет элементам переноситься на новую строку */
   justify-content: space-between;
-  /* padding-top: 120px; */
+  padding-top: 120px;
   margin-left: 15px; /* Отступ слева */
   margin-right: 15px; /* Отступ справа */
 }
